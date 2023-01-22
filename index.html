@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Виджеты для Дирекутм</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <p class="text-center">Здесь отображается Виджет таймер</p>
+
+          <div>
+            <span class="tittle">Часы</span>
+            <span class="hour">00</span>
+          </div>
+
+          <div>
+            <span class="tittle">Минуты</span>
+            <span class="minute">00</span>
+          </div>
+
+          <div>
+            <span class="tittle">Секунды</span>
+            <span class="second">00</span>
+          </div>
+
+          <div>
+            <span class="tittle">Милисекунды</span>
+            <span class="milisecond">00</span>
+          </div>
+
+          <div class="buttons">
+            <button class="button start">Start</button>
+            <button class="button stop">Stop</button>
+            <button class="button pause">Pause</button>
+          </div>
+        </div>
+        <div class="col-sm">
+          <p class="text-center">Здесь отображается Виджет погоды</p>
+          <input type="text" class="weather-widget" />
+          <button text="Погода" class="weather-button">
+            Введите название города
+          </button>
+          <div>
+            <br />
+            <span class="cityName"> Город : </span>
+            <br />
+            <span class="weatherDesc"> Погодные условия : </span>
+            <br />
+            <span class="feelLike"> Чувствуется как : </span>
+            <br />
+            <span class="cuttentTemp"> Температура : </span>
+            <br />
+          </div>
+
+          <div>
+            <span class="errorCity"> </span>
+          </div>
+        </div>
+        <div class="col-sm">
+          <p class="text-center">Здесь отображаются Виджеты</p>
+          <p class="text-center">Тут нету виджета</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./timerWidget.js"></script>
+    <script src="./weatherWidget.js"></script>
+  </body>
+</html>
